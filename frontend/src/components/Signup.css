@@ -1,0 +1,144 @@
+/* Container for the Sign-Up form */
+.auth-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 0.8s ease-out;
+    position: relative;
+}
+
+/* Animation for the form container */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Title style */
+.auth-container h2 {
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #333;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Error and message styling */
+.auth-container .error {
+    color: red;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.auth-container .message {
+    color: green;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+/* Label styling */
+.auth-container label {
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #555;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Input field styling */
+.auth-container input[type="text"],
+.auth-container input[type="email"],
+.auth-container input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Focus effect for input fields */
+.auth-container input[type="text"]:focus,
+.auth-container input[type="email"]:focus,
+.auth-container input[type="password"]:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+/* Password strength text styling */
+.auth-container .password-strength {
+    font-size: 0.9rem;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Button styling */
+.auth-container button[type="submit"] {
+    width: 100%;
+    padding: 10px;  /* Decreased padding for a smaller button */
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 1rem;  /* Decreased font size */
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.auth-container button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+/* Google sign-in button styling */
+.oauth-buttons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.oauth-buttons button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #db4437; /* Google color */
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    font-family: 'Poppins', sans-serif;
+}
+
+.oauth-buttons button img {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.oauth-buttons button:hover {
+    background-color: #c23321;
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .auth-container {
+        padding: 20px;
+        box-shadow: none;
+    }
+}

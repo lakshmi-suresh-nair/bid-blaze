@@ -1,0 +1,26 @@
+/* src/components/MyAccount.css */
+
+.my-account-container {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-account-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+.account-details {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+.account-details p {
+    margin-bottom: 15px;
+}

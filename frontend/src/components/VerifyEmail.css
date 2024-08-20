@@ -1,0 +1,20 @@
+.verify-email-container {
+    max-width: 500px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.verify-email-container h2 {
+    font-size: 2rem;
+    color: #333;
+}
+
+.verify-email-container p {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: #555;
+}
