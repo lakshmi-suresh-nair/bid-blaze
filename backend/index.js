@@ -32,8 +32,18 @@ app.get('/', (req, res) => {
     res.send('Auction Platform Backend');
 });
 
+
 // Start the server
 const PORT = process.env.PORT || 5001;
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
 });
+
+
+const corsOptions = {
+    origin: 'https://bid-blaze.vercel.app', // Replace with your frontend URL
+    optionsSuccessStatus: 200
+  };
+  
+  app.use(cors(corsOptions));
+  
